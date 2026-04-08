@@ -59,7 +59,6 @@ function go(key, scrollId) {
     resetScroll();
     bar.style.width = '80%';
     cur = key;
-    history.replaceState(null, '', key === 'home' ? window.location.pathname : '#' + key);
     setNav(key);
     initObs(pg);
 
@@ -126,18 +125,9 @@ document.addEventListener('click', e => {
 });
 // Cursor
 let mx=0, my=0, rx=0, ry=0;
-// Init — restore page from hash on refresh
-const initHash = window.location.hash.replace('#', '');
-if (initHash && PAGES[initHash]) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.getElementById('page-' + initHash).classList.add('active');
-  cur = initHash;
-  setNav(initHash);
-  initObs(document.getElementById('page-' + initHash));
-} else {
-  setNav('home');
-  initObs(document.getElementById('page-home'));
-}
+// Init
+setNav('home');
+initObs(document.getElementById('page-home'));
 
 // ── BACK TO TOP + SCROLL PROGRESS ──────────────────────────
 const backTop = document.getElementById('back-top');
@@ -203,7 +193,6 @@ document.querySelectorAll('.cs-page main').forEach(page => {
   if (home) home.textContent = txt;
   document.querySelectorAll('.footer-year-cs').forEach(el => el.textContent = txt);
 })();
-
 
 function lbOpen(id) {
   const el = document.getElementById(id);

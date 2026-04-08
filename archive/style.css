@@ -699,7 +699,7 @@ body::after {
 /* r-item hover removed */
 .cs-page .r-icon { width: 28px; height: 28px; margin-bottom: 1rem; color: var(--accent); opacity: 0.75; }
 .cs-page .r-num {
-  font-family: var(--serif); font-size: 2.2rem; font-weight: 900; line-height: 1.25; margin-bottom: 0.3rem; padding-bottom: 0.2em;
+  font-family: var(--serif); font-size: 2.2rem; font-weight: 900; line-height: 1; margin-bottom: 0.3rem;
   background: linear-gradient(135deg, var(--accent), var(--accent-g));
   -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
 }
@@ -1167,6 +1167,7 @@ button:focus:not(:focus-visible) { outline: none; }
   .cs-page .q-text { font-size: clamp(2.2rem, 7vw, 3rem); margin-top: 0; }
   .cs-page .np-l { padding: 2rem 1.2rem; }
   #page-home .work-header { padding-left: 1.2rem; padding-right: 1.2rem; }
+  .svg-vis { min-height: 220px; }
   /* Hero headings */
   .cs-page .hero-h { font-size: clamp(2.6rem, 11vw, 3.6rem); }
   #page-home .hero-h { font-size: clamp(2.8rem, 12vw, 4rem); }
