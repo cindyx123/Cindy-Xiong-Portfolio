@@ -16,7 +16,7 @@
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+CiAgPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNiIgZmlsbD0iIzFlM2E1ZiIvPgogIDx0ZXh0IHg9IjE2IiB5PSIyMiIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5DWDwvdGV4dD4KPC9zdmc+">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700&family=Manrope:wght@400;500;600;700&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
 
 <!-- Google tag (GA4) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2EP6X4THGN"></script>
@@ -118,7 +118,7 @@
     <div class="cs-visual-bg"></div>
     <div class="cs-visual-grid"></div>
     <div class="cs-img-wrap">
-      <img class="cs-img" src="images/wellness-hero.jpg" alt="Wellness Toolkit website">
+      <img class="cs-img" src="../images/wellness-hero.jpg" alt="Wellness Toolkit website">
     </div>
     <div class="cs-badge"><div class="cs-badge-dot"></div><span class="cs-badge-text">Improved Engagement</span></div>
   </div>
@@ -145,7 +145,7 @@
     <div class="cs-visual-bg"></div>
     <div class="cs-visual-grid"></div>
     <div class="cs-img-wrap">
-      <img class="cs-img" src="images/cvs-hero.jpg" alt="CVS Healthspire website">
+      <img class="cs-img" src="../images/cvs-hero.jpg" alt="CVS Healthspire website">
     </div>
     <div class="cs-badge"><div class="cs-badge-dot"></div><span class="cs-badge-text">Launched On Time</span></div>
   </div>
@@ -172,7 +172,7 @@
     <div class="cs-visual-bg"></div>
     <div class="cs-visual-grid"></div>
     <div class="cs-img-wrap">
-      <img class="cs-img" src="images/aetna-hero.jpg" alt="Aetna redesigned Medicare letter">
+      <img class="cs-img" src="../images/aetna-hero.jpg" alt="Aetna Medicare program letter">
     </div>
     <div class="cs-badge"><div class="cs-badge-dot"></div><span class="cs-badge-text">Approved Program-Wide</span></div>
   </div>
@@ -181,7 +181,7 @@
 <!-- ABOUT -->
 <div class="about-strip" id="about">
   <div class="about-l">
-    <img src="images/cindy-photo.jpg" alt="Cindy Xiong, UX Designer" class="about-photo">
+    <img src="../images/cindy-photo.jpg" alt="Cindy Xiong, UX Designer" class="about-photo">
     <div>
       <p class="about-l-tag">About</p>
       <h2 class="about-l-name">Cindy<br><em>Xiong</em></h2>
@@ -192,24 +192,19 @@
     <p class="about-r-eyebrow">A bit about me</p>
     <p>I’ve spent seven years designing things people actually need to use. Letters, platforms, and a lot in between.</p>
     <p>I care about the craft. The visual decisions, the hierarchy, the details that make something feel considered. I have the front-end skills to see work through from concept to shipped product. I stay involved until it’s&nbsp;right.</p>
-    <div class="skills-block">
-      <span class="skills-lbl">What I bring</span>
-      <div class="skills-list">
-        <div class="skill-item">End-to-end UX ownership</div>
-        <div class="skill-item">Accessibility-first design</div>
-        <div class="skill-item">Design to dev handoff</div>
-        <div class="skill-item">Cross-functional collaboration</div>
-        <div class="skill-item">Information architecture</div>
-        <div class="skill-item">Omni-channel design</div>
-      </div>
-      <div class="skills-divider"></div>
-      <span class="skills-lbl">Tools</span>
-      <div class="tools-list">
-        <span class="tool-item">Figma</span>
-        <span class="tool-item">Adobe Suite</span>
-        <span class="tool-item">HTML5 / CSS3</span>
-        <span class="tool-item">AEM / SFMC</span>
-      </div>
+    <div class="skills-grid">
+      <span class="skill" style="grid-column:1/-1;font-family:var(--mono);font-size:0.56rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink);border-color:var(--ink);font-weight:600;padding-top:0.5rem;border:none;padding-left:0;">What I bring</span>
+      <span class="skill">End-to-end UX ownership</span>
+      <span class="skill">Accessibility-first design</span>
+      <span class="skill">Design to dev handoff</span>
+      <span class="skill">Cross-functional collaboration</span>
+      <span class="skill">Information architecture</span>
+      <span class="skill">Omni-channel design</span>
+      <span class="skill" style="grid-column:1/-1;font-family:var(--mono);font-size:0.56rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink);font-weight:600;margin-top:0.5rem;border:none;padding-left:0;">Tools</span>
+      <span class="skill">Figma</span>
+      <span class="skill">Adobe Suite</span>
+      <span class="skill">HTML5 / CSS3</span>
+      <span class="skill">AEM / SFMC</span>
     </div>
   </div>
 </div>
@@ -244,22 +239,16 @@
       <span class="stroke-text script">find.</span>
     </h1>
     <p class="hero-sub">Members couldn’t get to the resources they needed. I rebuilt the platform around that problem.</p>
-    <div class="hero-meta">
-      <div class="hero-meta-row">
-        <span class="hero-meta-key">Role</span>
-        <span class="hero-meta-val">Sole UX Designer</span>
-      </div>
-      <div class="hero-meta-row">
-        <span class="hero-meta-key">Deliverables</span>
-        <span class="hero-meta-val">UX Redesign · Health Tech · Research · End-to-End</span>
-      </div>
+    <div class="hero-pills">
+      <span class="pill hi">Sole UX Designer</span>
+      <span class="pill">UX Redesign</span>
     </div>
   </div>
   <div class="hero-r">
     <div class="hero-r-bg"></div>
     <div class="hero-r-grid"></div>
     <div class="hero-img-wrap">
-      <img class="hero-img" src="images/wellness-hero.jpg" alt="Wellness Toolkit zoomed in">
+      <img class="hero-img" src="../images/wellness-hero.jpg" alt="Wellness Toolkit website">
       <div class="hero-badge">
         <div class="badge-dot"></div>
         <span class="badge-text">Measurable Engagement ↑</span>
@@ -267,28 +256,6 @@
     </div>
   </div>
 </section>
-<!-- TL;DR -->
-<div class="tldr-bar">
-  <div class="bar-tag">TL;DR</div>
-  <div class="bar-items">
-      <div class="bar-item">
-        <span class="bar-lbl">Problem</span>
-        <span class="bar-txt">Members couldn’t get to the health resources. The site was broken, stale, and gave them no reason to return.</span>
-      </div>
-      <div class="bar-item">
-        <span class="bar-lbl">Users</span>
-        <span class="bar-txt">Wellness champion members and the Account Managers who supported them.</span>
-      </div>
-      <div class="bar-item">
-        <span class="bar-lbl">Solution</span>
-        <span class="bar-txt">Rebuilt navigation, fixed content delivery, and gave members direct access to monthly health resources.</span>
-      </div>
-      <div class="bar-item">
-        <span class="bar-lbl">Impact</span>
-        <span class="bar-txt">Members could rely on the site. Account Managers had a reason to recommend it again.</span>
-      </div>
-  </div>
-</div>
 <!-- STATS -->
 <div class="stats-row" role="list">
   <div class="stat" role="listitem"><div class="stat-n">5</div><div class="stat-l">Pages designed</div></div>
@@ -298,22 +265,10 @@
 <div class="cs-content">
 <!-- CHALLENGES -->
 <div class="challenge-section">
-  <div class="challenge-top challenge-top-split">
-    <div class="challenge-top-l">
-      <p class="eyebrow"><span></span>The Challenge</p>
-      <h2 class="block-h">Built to help.<br>Too broken to trust.</h2>
-      <p class="block-p">Members weren’t getting to the health resources because the site was hard to navigate. Links broke, and the visual design didn’t feel trustworthy enough to come back to. The site looked and functioned like a standalone landing page — no depth, no clear paths, and nowhere to go after the first scroll.</p>
-    </div>
-    <div class="challenge-top-r">
-      <div class="lb-preview-wrap lb-cover" onclick="lbOpen('lb-wellness-original')" role="button" aria-label="View original Wellness site — click to enlarge">
-        <img src="images/wellness-original-site.png" alt="Wellness Toolkit — original site before redesign">
-        <div class="lb-click-cue" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M15 3h6v6h-2V5h-4V3zM3 15v6h6v-2H5v-4H3zm12 6h6v-6h-2v4h-4v2zM3 9V3h6v2H5v4H3z"/></svg>
-          Click to enlarge
-        </div>
-      </div>
-      <p class="cell-img-cap">Original site · before redesign</p>
-    </div>
+  <div class="challenge-top">
+    <p class="eyebrow"><span></span>The Challenge</p>
+    <h2 class="block-h">Built to help.<br>Too broken to trust.</h2>
+    <p class="block-p">Members weren’t getting to the health resources because the site was hard to navigate. Links broke, and the visual design didn’t feel trustworthy enough to come back to.</p>
   </div>
   <div class="challenge-cards-3">
     <div class="chal3">
@@ -340,10 +295,10 @@
     <p class="eyebrow"><span></span>My Role</p>
     <h2 class="block-h">Designer,
 start to launch.</h2>
-    <p class="block-p">My focus was making sure the experience actually worked. I mapped the flows, designed from mid-fi to hi-fi, and stayed involved through launch.</p>
+    <p class="block-p">My focus was making sure the experience actually worked. I mapped the flows, designed from lo-fi to hi-fi, and stayed involved through launch.</p>
     <div class="role-list">
       <div class="role-row">Interviewed the Product Manager and Account Managers. The AMs came with member frustrations straight from their weekly calls.</div>
-      <div class="role-row">Built the site map from scratch and designed through every stage, mid-fi to hi-fi.</div>
+      <div class="role-row">Built the site map from scratch and designed through every stage, lo-fi to hi-fi.</div>
       <div class="role-row">Worked with the brand designer to keep the visual direction true to ActiveHealth guidelines.</div>
       <div class="role-row">Ran usability testing with real members, caught one real issue, and fixed it before launch.</div>
     </div>
@@ -518,14 +473,14 @@ start to launch.</h2>
       </div>
     </div>
     <div>
-      <div class="lb-preview-wrap lb-cover" onclick="lbOpen('lb-wellness-wf')" role="button" aria-label="View wireframes — click to enlarge" style="margin-top:0">
-        <img src="images/wellness-midfi-home.jpg" alt="Wellness Toolkit — mid-fi, home page">
+      <div class="lb-preview-wrap" onclick="lbOpen('lb-wellness-wf')" role="button" aria-label="View wireframes — click to enlarge" style="margin-top:0">
+        <img src="../images/wellness-hifi-home.png" alt="Wellness Toolkit — wireframes">
         <div class="lb-click-cue" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M15 3h6v6h-2V5h-4V3zM3 15v6h6v-2H5v-4H3zm12 6h6v-6h-2v4h-4v2zM3 9V3h6v2H5v4H3z"/></svg>
           Click to enlarge
         </div>
       </div>
-      <p class="cell-img-cap">Mid-fi → hi-fi · 5 pages · click to explore</p>
+      <p class="cell-img-cap">Lo-fi → hi-fi · 5 pages · click to explore</p>
     </div>
   </div>
 </div>
@@ -609,8 +564,8 @@ start to launch.</h2>
     <p class="eyebrow"><span></span>Final Solution</p>
     <h2 class="block-h">A site members could<br>actually&nbsp;depend&nbsp;on.</h2>
     <p class="block-p" style="font-size:.86rem;color:var(--muted);line-height:1.75;margin-top:.8rem">The redesigned toolkit gave members a platform they could rely on. Clear navigation, content within reach, and a consistent call to action to reach their Account Manager on every page.</p>
-    <div class="lb-preview-wrap lb-contain" style="margin-top:2rem" onclick="lbOpen('lb-wellness-final')" role="button" aria-label="View final Wellness Toolkit design — click to enlarge">
-      <img src="images/wellness-final-toolkit.png" alt="ActiveHealth Wellness Toolkit — final redesigned site">
+    <div class="lb-preview-wrap" style="margin-top:2rem" onclick="lbOpen('lb-wellness-final')" role="button" aria-label="View final Wellness Toolkit design — click to enlarge">
+      <img src="../images/wellness-final-toolkit.png" alt="ActiveHealth Wellness Toolkit — final designed site">
       <div class="lb-click-cue" aria-hidden="true">
         <svg viewBox="0 0 24 24"><path d="M15 3h6v6h-2V5h-4V3zM3 15v6h6v-2H5v-4H3zm12 6h6v-6h-2v4h-4v2zM3 9V3h6v2H5v4H3z"/></svg>
         Click to enlarge
@@ -677,7 +632,7 @@ start to launch.</h2>
     <div class="np-cta" style="color:#1a7a6e">View Case Study <span class="np-arrow">→</span></div>
   </div>
   <div class="np-r" style="background:linear-gradient(135deg,#e0f4f2,#f5faf9)">
-    <img class="np-img" src="images/cvs-hero.jpg" alt="CVS Healthspire website">
+    <img class="np-img" src="../images/cvs-hero.jpg" alt="CVS Healthspire website">
   </div>
 </a>
 
@@ -697,22 +652,17 @@ start to launch.</h2>
       <span class="stroke-text script">from scratch.</span>
     </h1>
     <p class="hero-sub">The CVS Healthspire sales team was losing leads after every conference because there was nowhere to send people. I built them a website that changed that.</p>
-    <div class="hero-meta">
-      <div class="hero-meta-row">
-        <span class="hero-meta-key">Role</span>
-        <span class="hero-meta-val">Design Consultant · Lead Developer</span>
-      </div>
-      <div class="hero-meta-row">
-        <span class="hero-meta-key">Deliverables</span>
-        <span class="hero-meta-val">Web Design · 0→1 Build · B2B · Design + Dev</span>
-      </div>
+    <div class="hero-pills">
+      <span class="pill hi">Design Consultant</span>
+      <span class="pill">Developer</span>
+      <span class="pill">Web Design</span>
     </div>
   </div>
   <div class="hero-r">
     <div class="hero-r-bg"></div>
     <div class="hero-r-grid"></div>
     <div class="hero-img-wrap">
-      <img class="hero-img" src="images/cvs-hero.jpg" alt="CVS Healthspire website">
+      <img class="hero-img" src="../images/cvs-hero.jpg" alt="CVS Healthspire website">
       <div class="hero-badge">
         <div class="badge-dot"></div>
         <span class="badge-text">Launched On Time</span>
@@ -720,28 +670,6 @@ start to launch.</h2>
     </div>
   </div>
 </section>
-<!-- TL;DR -->
-<div class="tldr-bar">
-  <div class="bar-tag">TL;DR</div>
-  <div class="bar-items">
-      <div class="bar-item">
-        <span class="bar-lbl">Problem</span>
-        <span class="bar-txt">No website meant tradeshow conversations went nowhere. Prospects had no place to go after the pitch.</span>
-      </div>
-      <div class="bar-item">
-        <span class="bar-lbl">Users</span>
-        <span class="bar-txt">Senior pharma and healthcare decision-makers evaluating vendors post-tradeshow.</span>
-      </div>
-      <div class="bar-item">
-        <span class="bar-lbl">Solution</span>
-        <span class="bar-txt">Designed and built a 3-page responsive website from scratch in 12 weeks, in time for the next conference.</span>
-      </div>
-      <div class="bar-item">
-        <span class="bar-lbl">Impact</span>
-        <span class="bar-txt">Sales team finally had a destination to send prospects. The brand had a credible digital home.</span>
-      </div>
-  </div>
-</div>
 <!-- STATS -->
 <div class="stats-row" role="list">
   <div class="stat" role="listitem"><div class="stat-n">1</div><div class="stat-l">First website built from scratch</div></div>
@@ -1064,8 +992,8 @@ Nothing it didn’t.</h2>
 design before
 it got built.</h2>
     <p class="block-p" style="margin-bottom:1.5rem">Some components had locked styles that couldn’t take the Healthspire brand colors in time for launch. I flagged it early so we designed around those constraints cleanly, instead of shipping something we’d have to fix later.</p>
-    <div class="lb-preview-wrap lb-cover" onclick="lbOpen('lb-cvs-wf')" role="button" aria-label="View CVS wireframes — click to enlarge" style="margin-top:0">
-      <img src="images/cvs-hifi-home-desktop.jpg" alt="CVS Healthspire — mid-fi wireframes">
+    <div class="lb-preview-wrap" onclick="lbOpen('lb-cvs-wf')" role="button" aria-label="View CVS wireframes — click to enlarge" style="margin-top:0">
+      <img src="../images/cvs-hifi-home-desktop.jpg" alt="CVS Healthspire — wireframes">
       <div class="lb-click-cue" aria-hidden="true">
         <svg viewBox="0 0 24 24"><path d="M15 3h6v6h-2V5h-4V3zM3 15v6h6v-2H5v-4H3zm12 6h6v-6h-2v4h-4v2zM3 9V3h6v2H5v4H3z"/></svg>
         Click to enlarge
@@ -1154,8 +1082,8 @@ it got built.</h2>
     <p class="eyebrow"><span></span>Final Solution</p>
     <h2 class="block-h">A professional digital<br>home, launched on&nbsp;time.</h2>
     <p class="block-p" style="font-size:.86rem;color:var(--muted);line-height:1.75;margin-top:.8rem">The site launched before the next conference. The sales team finally had a CVS Healthspire site to point prospects to. They had a place to follow up, learn more, and reach out to the right person.</p>
-    <div class="lb-preview-wrap lb-contain" style="margin-top:2rem" onclick="lbOpen('lb-cvs-final')" role="button" aria-label="View CVS Healthspire final website — click to enlarge">
-      <img src="images/cvs-final-website.png" alt="CVS Healthspire — final website design">
+    <div class="lb-preview-wrap" style="margin-top:2rem" onclick="lbOpen('lb-cvs-final')" role="button" aria-label="View CVS Healthspire final website — click to enlarge">
+      <img src="../images/cvs-final-website.png" alt="CVS Healthspire — final website design">
       <div class="lb-click-cue" aria-hidden="true">
         <svg viewBox="0 0 24 24"><path d="M15 3h6v6h-2V5h-4V3zM3 15v6h6v-2H5v-4H3zm12 6h6v-6h-2v4h-4v2zM3 9V3h6v2H5v4H3z"/></svg>
         Click to enlarge
@@ -1224,7 +1152,7 @@ it got built.</h2>
     <div class="np-cta" style="color:#5a2d9c">View Case Study <span class="np-arrow">→</span></div>
   </div>
   <div class="np-r" style="background:linear-gradient(135deg,#ede5f7,#faf7f2)">
-    <img class="np-img" src="images/aetna-hero.jpg" alt="Aetna Medicare program letter">
+    <img class="np-img" src="../images/aetna-hero.jpg" alt="Aetna Medicare program letter">
   </div>
 </a>
 
@@ -1246,22 +1174,16 @@ it got built.</h2>
       <span class="stroke-text script">for people.</span>
     </h1>
     <p class="hero-sub">Medicare members were missing their benefits because the letter was too hard to read. I redesigned it around them.</p>
-    <div class="hero-meta">
-      <div class="hero-meta-row">
-        <span class="hero-meta-key">Role</span>
-        <span class="hero-meta-val">Sole UX Designer</span>
-      </div>
-      <div class="hero-meta-row">
-        <span class="hero-meta-key">Deliverables</span>
-        <span class="hero-meta-val">Print UX · Accessibility · Healthcare · Letter Redesign</span>
-      </div>
+    <div class="hero-pills">
+      <span class="pill hi">Sole UX Designer</span>
+      <span class="pill">Print UX</span>
     </div>
   </div>
   <div class="hero-r">
     <div class="hero-r-bg"></div>
     <div class="hero-r-grid"></div>
     <div class="hero-img-wrap">
-      <img class="hero-img" src="images/aetna-hero.jpg" alt="Aetna redesigned Medicare letter">
+      <img class="hero-img" src="../images/aetna-hero.jpg" alt="Aetna Medicare program letter">
       <div class="hero-badge">
         <div class="badge-dot"></div>
         <span class="badge-text">Approved Program-Wide</span>
@@ -1269,28 +1191,6 @@ it got built.</h2>
     </div>
   </div>
 </section>
-<!-- TL;DR -->
-<div class="tldr-bar">
-  <div class="bar-tag">TL;DR</div>
-  <div class="bar-items">
-      <div class="bar-item">
-        <span class="bar-lbl">Problem</span>
-        <span class="bar-txt">Medicare members were missing their benefits because the letter meant to help them was too hard to read.</span>
-      </div>
-      <div class="bar-item">
-        <span class="bar-lbl">Users</span>
-        <span class="bar-txt">Medicare members 65 and older managing their health benefits.</span>
-      </div>
-      <div class="bar-item">
-        <span class="bar-lbl">Solution</span>
-        <span class="bar-txt">Redesigned hierarchy, increased type size to meet accessibility standards, and surfaced the contact number.</span>
-      </div>
-      <div class="bar-item">
-        <span class="bar-lbl">Impact</span>
-        <span class="bar-txt">Approved across the entire program. Became the voice and tone benchmark for all member communications.</span>
-      </div>
-  </div>
-</div>
 <!-- STATS -->
 <div class="stats-row" role="list">
   <div class="stat" role="listitem"><div class="stat-n">65+</div><div class="stat-l">Primary audience</div></div>
@@ -1572,8 +1472,8 @@ it got built.</h2>
       </div>
     </div>
     <div>
-      <div class="lb-preview-wrap lb-cover" onclick="lbOpen('lb-aetna-process')" role="button" aria-label="View Aetna letter design progression — click to enlarge" style="margin-top:0">
-        <img src="images/aetna-final-redesign.png" alt="Aetna Medicare letter — final redesign">
+      <div class="lb-preview-wrap" onclick="lbOpen('lb-aetna-process')" role="button" aria-label="View Aetna letter design progression — click to enlarge" style="margin-top:0">
+        <img src="../images/aetna-final-redesign.png" alt="Aetna Medicare letter — final redesign">
         <div class="lb-click-cue" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M15 3h6v6h-2V5h-4V3zM3 15v6h6v-2H5v-4H3zm12 6h6v-6h-2v4h-4v2zM3 9V3h6v2H5v4H3z"/></svg>
           Click to see full progression
@@ -1677,8 +1577,8 @@ it got built.</h2>
     <p class="eyebrow"><span></span>Final Solution</p>
     <h2 class="block-h">Approved across<br>the whole program.</h2>
     <p class="block-p" style="font-size:.86rem;color:var(--muted);line-height:1.75;margin-top:.8rem">What started as a Medicare letter ended up reshaping how the whole program communicates with members.</p>
-    <div class="lb-preview-wrap lb-contain" style="margin-top:2rem" onclick="lbOpen('lb-aetna-final')" role="button" aria-label="View final Aetna letter design — click to enlarge">
-      <img src="images/aetna-final-letter.png" alt="Aetna Medicare letter — final redesigned version">
+    <div class="lb-preview-wrap" style="margin-top:2rem" onclick="lbOpen('lb-aetna-final')" role="button" aria-label="View final Aetna letter design — click to enlarge">
+      <img src="../images/aetna-final-redesign.png" alt="Aetna Medicare letter — final designed version">
       <div class="lb-click-cue" aria-hidden="true">
         <svg viewBox="0 0 24 24"><path d="M15 3h6v6h-2V5h-4V3zM3 15v6h6v-2H5v-4H3zm12 6h6v-6h-2v4h-4v2zM3 9V3h6v2H5v4H3z"/></svg>
         Click to enlarge
@@ -1746,7 +1646,7 @@ it got built.</h2>
     <div class="np-cta" style="color:#1e3a5f">View Case Study <span class="np-arrow">→</span></div>
   </div>
   <div class="np-r" style="background:linear-gradient(135deg,#e4ecf7,#f4f6fb)">
-    <img class="np-img" src="images/wellness-hero.jpg" alt="Wellness Toolkit website">
+    <img class="np-img" src="../images/wellness-hero.jpg" alt="Wellness Toolkit website">
   </div>
 </a>
 
@@ -1764,52 +1664,38 @@ it got built.</h2>
      LIGHTBOX OVERLAYS
 ═══════════════════════════════════════════ -->
 
-<!-- 0. WELLNESS ORIGINAL SITE -->
-<div class="lb-overlay" id="lb-wellness-original" role="dialog" aria-modal="true" aria-label="Original Wellness site" onclick="lbBgClose(event,'lb-wellness-original')">
-  <div class="lb-top-bar">
-    <div class="lb-top-bar-title">Original Site · Before Redesign</div>
-    <button class="lb-close-btn" onclick="lbClose('lb-wellness-original')">&#x2715; Close</button>
-  </div>
-  <div class="lb-content">
-    <div class="lb-card">
-      <div class="lb-card-img-wrap"><img src="images/wellness-original-site.png" alt="Wellness Toolkit — original site before redesign"></div>
-    </div>
-  </div>
-  <p class="lb-esc-hint">Press ESC or click outside to close</p>
-</div>
-
-<!-- 1. WELLNESS WIREFRAMES — mid-fi / hi-fi toggle -->
+<!-- 1. WELLNESS WIREFRAMES — lo-fi / hi-fi toggle -->
 <div class="lb-overlay" id="lb-wellness-wf" role="dialog" aria-modal="true" aria-label="Wellness Toolkit wireframes" onclick="lbBgClose(event,'lb-wellness-wf')">
   <div class="lb-top-bar">
     <div class="lb-toggle-row">
-      <button class="lb-toggle-btn on"  id="lb-wellness-wf-btn-midfi" onclick="lbToggle('lb-wellness-wf','midfi',event)">Mid-fi</button>
+      <button class="lb-toggle-btn on"  id="lb-wellness-wf-btn-lofi" onclick="lbToggle('lb-wellness-wf','lofi',event)">Lo-fi</button>
       <button class="lb-toggle-btn off" id="lb-wellness-wf-btn-hifi" onclick="lbToggle('lb-wellness-wf','hifi',event)">Hi-fi</button>
     </div>
     <button class="lb-close-btn" onclick="lbClose('lb-wellness-wf')">✕ Close</button>
   </div>
   <div class="lb-content">
-    <!-- MID-FI PANEL -->
-    <div class="lb-panel active" id="lb-wellness-wf-midfi">
+    <!-- LO-FI PANEL -->
+    <div class="lb-panel active" id="lb-wellness-wf-lofi">
       <div class="lb-img-grid">
         <div class="lb-card">
-          <div class="lb-card-img-wrap"><img src="images/wellness-midfi-home.jpg" alt="Mid-fi — Home page"></div>
-          <div class="lb-card-label"><span class="lb-device-pill d">Mid-fi</span><span>Index / Home</span></div>
+          <div class="lb-card-img-wrap"><img src="../images/wellness-lofi-home.jpg" alt="Lo-fi — Home page"></div>
+          <div class="lb-card-label"><span class="lb-device-pill d">Lo-fi</span><span>Index / Home</span></div>
         </div>
         <div class="lb-card">
-          <div class="lb-card-img-wrap"><img src="images/wellness-midfi-champion.jpg" alt="Mid-fi — Be a Champion"></div>
-          <div class="lb-card-label"><span class="lb-device-pill d">Mid-fi</span><span>Be a Champion</span></div>
+          <div class="lb-card-img-wrap"><img src="../images/wellness-lofi-champion.jpg" alt="Lo-fi — Be a Champion"></div>
+          <div class="lb-card-label"><span class="lb-device-pill d">Lo-fi</span><span>Be a Champion</span></div>
         </div>
         <div class="lb-card">
-          <div class="lb-card-img-wrap"><img src="images/wellness-midfi-campaign.jpg" alt="Mid-fi — Campaign &amp; Challenges"></div>
-          <div class="lb-card-label"><span class="lb-device-pill d">Mid-fi</span><span>Campaign &amp; Challenges</span></div>
+          <div class="lb-card-img-wrap"><img src="../images/wellness-lofi-campaign.jpg" alt="Lo-fi — Campaign & Challenges"></div>
+          <div class="lb-card-label"><span class="lb-device-pill d">Lo-fi</span><span>Campaign &amp; Challenges</span></div>
         </div>
         <div class="lb-card">
-          <div class="lb-card-img-wrap"><img src="images/wellness-midfi-monthly.jpg" alt="Mid-fi — Monthly Resources"></div>
-          <div class="lb-card-label"><span class="lb-device-pill d">Mid-fi</span><span>Monthly Resources</span></div>
+          <div class="lb-card-img-wrap"><img src="../images/wellness-lofi-monthly.jpg" alt="Lo-fi — Monthly Resources"></div>
+          <div class="lb-card-label"><span class="lb-device-pill d">Lo-fi</span><span>Monthly Resources</span></div>
         </div>
         <div class="lb-card lb-grid-full">
-          <div class="lb-card-img-wrap"><img src="images/wellness-midfi-library.jpg" alt="Mid-fi — Resource Library"></div>
-          <div class="lb-card-label"><span class="lb-device-pill d">Mid-fi</span><span>Resource Library</span></div>
+          <div class="lb-card-img-wrap"><img src="../images/wellness-lofi-library.jpg" alt="Lo-fi — Resource Library"></div>
+          <div class="lb-card-label"><span class="lb-device-pill d">Lo-fi</span><span>Resource Library</span></div>
         </div>
       </div>
     </div>
@@ -1817,23 +1703,23 @@ it got built.</h2>
     <div class="lb-panel" id="lb-wellness-wf-hifi">
       <div class="lb-img-grid">
         <div class="lb-card">
-          <div class="lb-card-img-wrap"><img src="images/wellness-hifi-home.png" alt="Hi-fi — Home page"></div>
+          <div class="lb-card-img-wrap"><img src="../images/wellness-hifi-home.png" alt="Hi-fi — Home page"></div>
           <div class="lb-card-label"><span class="lb-device-pill m">Hi-fi</span><span>Index / Home</span></div>
         </div>
         <div class="lb-card">
-          <div class="lb-card-img-wrap"><img src="images/wellness-hifi-champion.png" alt="Hi-fi — Be a Champion"></div>
+          <div class="lb-card-img-wrap"><img src="../images/wellness-hifi-champion.png" alt="Hi-fi — Be a Champion"></div>
           <div class="lb-card-label"><span class="lb-device-pill m">Hi-fi</span><span>Be a Champion</span></div>
         </div>
         <div class="lb-card">
-          <div class="lb-card-img-wrap"><img src="images/wellness-hifi-campaign.png" alt="Hi-fi — Campaign &amp; Challenges"></div>
+          <div class="lb-card-img-wrap"><img src="../images/wellness-hifi-campaign.png" alt="Hi-fi — Campaign & Challenges"></div>
           <div class="lb-card-label"><span class="lb-device-pill m">Hi-fi</span><span>Campaign &amp; Challenges</span></div>
         </div>
         <div class="lb-card">
-          <div class="lb-card-img-wrap"><img src="images/wellness-hifi-monthly.png" alt="Hi-fi — Monthly Resources"></div>
+          <div class="lb-card-img-wrap"><img src="../images/wellness-hifi-monthly.png" alt="Hi-fi — Monthly Resources"></div>
           <div class="lb-card-label"><span class="lb-device-pill m">Hi-fi</span><span>Monthly Resources</span></div>
         </div>
         <div class="lb-card lb-grid-full">
-          <div class="lb-card-img-wrap"><img src="images/wellness-hifi-library.png" alt="Hi-fi — Resource Library"></div>
+          <div class="lb-card-img-wrap"><img src="../images/wellness-hifi-library.png" alt="Hi-fi — Resource Library"></div>
           <div class="lb-card-label"><span class="lb-device-pill m">Hi-fi</span><span>Resource Library</span></div>
         </div>
       </div>
@@ -1850,7 +1736,7 @@ it got built.</h2>
   </div>
   <div class="lb-content">
     <div class="lb-card">
-      <div class="lb-card-img-wrap"><img src="images/wellness-final-toolkit.png" alt="Wellness Toolkit — final redesigned site"></div>
+      <div class="lb-card-img-wrap"><img src="../images/wellness-final-toolkit.png" alt="Wellness Toolkit — final designed site"></div>
     </div>
   </div>
   <p class="lb-esc-hint">Press ESC or click outside to close</p>
@@ -1872,11 +1758,11 @@ it got built.</h2>
         <div class="lb-page-label">Homepage</div>
         <div class="lb-pair">
           <div class="lb-card">
-            <div class="lb-card-img-wrap"><img src="images/cvs-midfi-home-desktop.jpg" alt="Mid-fi — Homepage desktop"></div>
+            <div class="lb-card-img-wrap"><img src="../images/cvs-midfi-home-desktop.jpg" alt="Mid-fi — Homepage desktop"></div>
             <div class="lb-card-label"><span class="lb-device-pill d">Desktop</span><span>1440px</span></div>
           </div>
           <div class="lb-card">
-            <div class="lb-card-img-wrap"><img src="images/cvs-midfi-home-mobile.jpg" alt="Mid-fi — Homepage mobile"></div>
+            <div class="lb-card-img-wrap"><img src="../images/cvs-midfi-home-mobile.jpg" alt="Mid-fi — Homepage mobile"></div>
             <div class="lb-card-label"><span class="lb-device-pill m">Mobile</span><span>375px</span></div>
           </div>
         </div>
@@ -1885,11 +1771,11 @@ it got built.</h2>
         <div class="lb-page-label">Contact</div>
         <div class="lb-pair">
           <div class="lb-card">
-            <div class="lb-card-img-wrap"><img src="images/cvs-midfi-contact-desktop.jpg" alt="Mid-fi — Contact desktop"></div>
+            <div class="lb-card-img-wrap"><img src="../images/cvs-midfi-contact-desktop.jpg" alt="Mid-fi — Contact desktop"></div>
             <div class="lb-card-label"><span class="lb-device-pill d">Desktop</span><span>1440px</span></div>
           </div>
           <div class="lb-card">
-            <div class="lb-card-img-wrap"><img src="images/cvs-midfi-contact-mobile.jpg" alt="Mid-fi — Contact mobile"></div>
+            <div class="lb-card-img-wrap"><img src="../images/cvs-midfi-contact-mobile.jpg" alt="Mid-fi — Contact mobile"></div>
             <div class="lb-card-label"><span class="lb-device-pill m">Mobile</span><span>375px</span></div>
           </div>
         </div>
@@ -1898,11 +1784,11 @@ it got built.</h2>
         <div class="lb-page-label">Thank You</div>
         <div class="lb-pair">
           <div class="lb-card">
-            <div class="lb-card-img-wrap"><img src="images/cvs-midfi-thankyou-desktop.jpg" alt="Mid-fi — Thank You desktop"></div>
+            <div class="lb-card-img-wrap"><img src="../images/cvs-midfi-thankyou-desktop.jpg" alt="Mid-fi — Thank You desktop"></div>
             <div class="lb-card-label"><span class="lb-device-pill d">Desktop</span><span>1440px</span></div>
           </div>
           <div class="lb-card">
-            <div class="lb-card-img-wrap"><img src="images/cvs-midfi-thankyou-mobile.jpg" alt="Mid-fi — Thank You mobile"></div>
+            <div class="lb-card-img-wrap"><img src="../images/cvs-midfi-thankyou-mobile.jpg" alt="Mid-fi — Thank You mobile"></div>
             <div class="lb-card-label"><span class="lb-device-pill m">Mobile</span><span>375px</span></div>
           </div>
         </div>
@@ -1914,11 +1800,11 @@ it got built.</h2>
         <div class="lb-page-label">Homepage</div>
         <div class="lb-pair">
           <div class="lb-card">
-            <div class="lb-card-img-wrap"><img src="images/cvs-hifi-home-desktop.jpg" alt="Hi-fi — Homepage desktop"></div>
+            <div class="lb-card-img-wrap"><img src="../images/cvs-hifi-home-desktop.jpg" alt="Hi-fi — Homepage desktop"></div>
             <div class="lb-card-label"><span class="lb-device-pill d">Desktop</span><span>1440px</span></div>
           </div>
           <div class="lb-card">
-            <div class="lb-card-img-wrap"><img src="images/cvs-hifi-home-mobile.jpg" alt="Hi-fi — Homepage mobile"></div>
+            <div class="lb-card-img-wrap"><img src="../images/cvs-hifi-home-mobile.jpg" alt="Hi-fi — Homepage mobile"></div>
             <div class="lb-card-label"><span class="lb-device-pill m">Mobile</span><span>375px</span></div>
           </div>
         </div>
@@ -1927,11 +1813,11 @@ it got built.</h2>
         <div class="lb-page-label">Contact</div>
         <div class="lb-pair">
           <div class="lb-card">
-            <div class="lb-card-img-wrap"><img src="images/cvs-hifi-contact-desktop.png" alt="Hi-fi — Contact desktop"></div>
+            <div class="lb-card-img-wrap"><img src="../images/cvs-hifi-contact-desktop.png" alt="Hi-fi — Contact desktop"></div>
             <div class="lb-card-label"><span class="lb-device-pill d">Desktop</span><span>1440px</span></div>
           </div>
           <div class="lb-card">
-            <div class="lb-card-img-wrap"><img src="images/cvs-hifi-contact-mobile.png" alt="Hi-fi — Contact mobile"></div>
+            <div class="lb-card-img-wrap"><img src="../images/cvs-hifi-contact-mobile.png" alt="Hi-fi — Contact mobile"></div>
             <div class="lb-card-label"><span class="lb-device-pill m">Mobile</span><span>375px</span></div>
           </div>
         </div>
@@ -1940,11 +1826,11 @@ it got built.</h2>
         <div class="lb-page-label">Thank You</div>
         <div class="lb-pair">
           <div class="lb-card">
-            <div class="lb-card-img-wrap"><img src="images/cvs-hifi-thankyou-desktop.png" alt="Hi-fi — Thank You desktop"></div>
+            <div class="lb-card-img-wrap"><img src="../images/cvs-hifi-thankyou-desktop.png" alt="Hi-fi — Thank You desktop"></div>
             <div class="lb-card-label"><span class="lb-device-pill d">Desktop</span><span>1440px</span></div>
           </div>
           <div class="lb-card">
-            <div class="lb-card-img-wrap"><img src="images/cvs-hifi-thankyou-mobile.png" alt="Hi-fi — Thank You mobile"></div>
+            <div class="lb-card-img-wrap"><img src="../images/cvs-hifi-thankyou-mobile.png" alt="Hi-fi — Thank You mobile"></div>
             <div class="lb-card-label"><span class="lb-device-pill m">Mobile</span><span>375px</span></div>
           </div>
         </div>
@@ -1962,7 +1848,7 @@ it got built.</h2>
   </div>
   <div class="lb-content">
     <div class="lb-card">
-      <div class="lb-card-img-wrap"><img src="images/cvs-final-website.png" alt="CVS Healthspire — final website design"></div>
+      <div class="lb-card-img-wrap"><img src="../images/cvs-final-website.png" alt="CVS Healthspire — final website design"></div>
     </div>
   </div>
   <p class="lb-esc-hint">Press ESC or click outside to close</p>
@@ -1977,20 +1863,20 @@ it got built.</h2>
   <div class="lb-content">
     <div class="lb-three-col">
       <div class="lb-card">
-        <div class="lb-card-img-wrap"><img src="images/aetna-original.png" alt="Original Aetna letter — before redesign"></div>
+        <div class="lb-card-img-wrap"><img src="../images/aetna-original.png" alt="Original Aetna letter — before redesign"></div>
         <div class="lb-card-label" style="flex-direction:column;align-items:flex-start;gap:6px;">
           <div class="lb-step-label s1">01 · Original</div>
           <div class="lb-step-title">Before redesign</div>
           <div class="lb-changes">
-            <div class="lb-change"><div class="lb-dot bad"></div>No visual hierarchy &mdash; everything the same weight</div>
+            <div class="lb-change"><div class="lb-dot bad"></div>No visual hierarchy · everything the same weight</div>
             <div class="lb-change"><div class="lb-dot bad"></div>Type too small for 65+ audience</div>
             <div class="lb-change"><div class="lb-dot bad"></div>Phone number buried in paragraph text</div>
-            <div class="lb-change"><div class="lb-dot bad"></div>Dense block copy &mdash; no way to scan</div>
+            <div class="lb-change"><div class="lb-dot bad"></div>Dense block copy · no way to scan</div>
           </div>
         </div>
       </div>
       <div class="lb-card">
-        <div class="lb-card-img-wrap"><img src="images/aetna-initial-redesign.png" alt="First pass redesign"></div>
+        <div class="lb-card-img-wrap"><img src="../images/aetna-initial-redesign.png" alt="First pass redesign"></div>
         <div class="lb-card-label" style="flex-direction:column;align-items:flex-start;gap:6px;">
           <div class="lb-step-label s2">02 · First Pass</div>
           <div class="lb-step-title">Initial redesign</div>
@@ -1998,19 +1884,19 @@ it got built.</h2>
             <div class="lb-change"><div class="lb-dot good"></div>Phone number moved to top</div>
             <div class="lb-change"><div class="lb-dot good"></div>Type size increased throughout</div>
             <div class="lb-change"><div class="lb-dot good"></div>Benefits surfaced with icons in sidebar</div>
-            <div class="lb-change"><div class="lb-dot neutral"></div>Add icons in final per stakeholder feedback</div>
+            <div class="lb-change"><div class="lb-dot neutral"></div>Want icons in the final per stakeholder feedback</div>
           </div>
         </div>
       </div>
       <div class="lb-card">
-        <div class="lb-card-img-wrap"><img src="images/aetna-final-redesign.png" alt="Final approved letter"></div>
+        <div class="lb-card-img-wrap"><img src="../images/aetna-final-redesign.png" alt="Final approved letter"></div>
         <div class="lb-card-label" style="flex-direction:column;align-items:flex-start;gap:6px;">
           <div class="lb-step-label s3">03 · Final</div>
           <div class="lb-step-title">Approved program-wide</div>
           <div class="lb-changes">
             <div class="lb-change"><div class="lb-dot good"></div>Sidebar surfaces benefits at a glance</div>
             <div class="lb-change"><div class="lb-dot good"></div>Phone number impossible to miss</div>
-            <div class="lb-change"><div class="lb-dot good"></div>Clean, scannable &mdash; icons added</div>
+            <div class="lb-change"><div class="lb-dot good"></div>Clean, scannable · icons included</div>
             <div class="lb-change"><div class="lb-dot good"></div>Adopted across the entire Aetna program</div>
           </div>
         </div>
@@ -2028,7 +1914,7 @@ it got built.</h2>
   </div>
   <div class="lb-content">
     <div class="lb-card">
-      <div class="lb-card-img-wrap"><img src="images/aetna-final-redesign.png" alt="Aetna Medicare letter — final redesigned version"></div>
+      <div class="lb-card-img-wrap"><img src="../images/aetna-final-redesign.png" alt="Aetna Medicare letter — final redesigned version"></div>
     </div>
   </div>
   <p class="lb-esc-hint">Press ESC or click outside to close</p>
@@ -2038,6 +1924,6 @@ it got built.</h2>
      LIGHTBOX JAVASCRIPT
 ═══════════════════════════════════════════ -->
 
-<script src="script.js"></script>
+<script src="../script.js"></script>
 </body>
 </html>
