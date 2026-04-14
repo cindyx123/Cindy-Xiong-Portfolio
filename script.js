@@ -239,6 +239,8 @@ function lbToggle(lbId, panel, e) {
   });
   const activeBtn = document.getElementById(lbId + '-btn-' + panel);
   if (activeBtn) { activeBtn.classList.add('on'); activeBtn.classList.remove('off'); }
+  // scroll overlay back to top
+  if (lb) lb.scrollTop = 0;
 }
 
 // ESC to close any open lightbox
