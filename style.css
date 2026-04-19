@@ -47,20 +47,6 @@ body::after {
   opacity: 0.5; mix-blend-mode: multiply;
 }
 
-/* cursor — hidden, restored to default */
-#cur, #curR { display: none !important; }
-#cur-DISABLED, #curR-DISABLED {
-  position: fixed; top: 0; left: 0;
-  border-radius: 50%; pointer-events: none;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-  transition: width 0.15s, height 0.15s;
-}
-#cur  { width: 10px; height: 10px; mix-blend-mode: multiply; }
-#curR { width: 38px; height: 38px; border: 1.5px solid; opacity: 0.25; z-index: 9997; }
-
-
-
 /* orbs */
 .orbs {
   position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden;
@@ -1229,7 +1215,6 @@ button:focus:not(:focus-visible) { outline: none; }
 /* ── CURSOR: pointer devices only (WCAG 2.5.3) ── */
 @media (pointer: coarse) {
   body { cursor: auto !important; }
-  #cur, #curR { display: none !important; }
 }
 
 
@@ -1463,36 +1448,45 @@ br.mobile-br { display: none; }
 .lb-content { width: 100%; max-width: 1000px; }
 .lb-panel { display: none; }
 .lb-panel.active { display: block; }
-.lb-page-group { margin-bottom: 28px; }
-.lb-page-label {
-  font-family: var(--mono, 'DM Mono', monospace);
-  font-size: 0.6rem; font-weight: 700;
-  letter-spacing: 0.12em; text-transform: uppercase;
-  color: rgba(255,255,255,0.65);
-  margin-bottom: 12px; margin-top: 4px;
-  display: flex; align-items: center; gap: 10px;
-}
-.lb-page-label::after {
-  content: ''; flex: 1; height: 1px;
-  background: rgba(255,255,255,0.1);
-}
-.lb-pair {
-  display: grid; grid-template-columns: 1fr 320px;
-  gap: 12px; align-items: start;
-}
 .lb-three-col {
   display: grid; grid-template-columns: repeat(3,1fr);
   gap: 14px; align-items: start;
 }
 .lb-img-grid {
-  display: grid; grid-template-columns: repeat(2,1fr);
+  column-count: 2; column-gap: 14px;
+}
+.lb-img-grid .lb-card {
+  break-inside: avoid;
+  margin-bottom: 14px;
+  display: inline-block; width: 100%;
+}
+.lb-img-grid .lb-grid-full { column-span: all; }
+
+/* New CVS lightbox layout — desktop stacked, mobile side-by-side */
+.lb-desktop-stack {
+  display: flex; flex-direction: column; gap: 16px;
+  margin-bottom: 8px;
+}
+.lb-mobile-row {
+  display: grid; grid-template-columns: repeat(3, 1fr);
   gap: 14px; align-items: start;
 }
-.lb-img-grid .lb-grid-full { grid-column: 1 / -1; }
+.lb-section-label {
+  font-family: var(--mono, 'DM Mono', monospace);
+  font-size: 0.65rem; letter-spacing: 0.15em;
+  text-transform: uppercase; color: rgba(255,255,255,0.55);
+  padding: 20px 0 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 16px;
+}
+.lb-section-label:first-child { padding-top: 0; }
+
 @media (max-width: 700px) {
-  .lb-pair { grid-template-columns: 1fr; }
+  .lb-mobile-row { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+}
+@media (max-width: 700px) {
   .lb-three-col { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
-  .lb-img-grid { grid-template-columns: 1fr; }
+  .lb-img-grid { column-count: 1; }
   .lb-toggle-btn { padding: 5px 12px; font-size: 0.55rem; }
 }
 .lb-card {

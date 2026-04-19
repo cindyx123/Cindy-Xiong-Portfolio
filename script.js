@@ -124,8 +124,6 @@ document.addEventListener('click', e => {
   e.preventDefault();
   go(a.dataset.page, a.dataset.scroll || null);
 });
-// Cursor
-let mx=0, my=0, rx=0, ry=0;
 // Init — restore page from hash on refresh
 const initHash = window.location.hash.replace('#', '');
 if (initHash && PAGES[initHash]) {
