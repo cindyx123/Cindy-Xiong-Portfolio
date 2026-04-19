@@ -1458,7 +1458,7 @@ br.mobile-br { display: none; }
 .lb-img-grid .lb-card {
   break-inside: avoid;
   margin-bottom: 14px;
-  display: inline-block; width: 100%;
+  display: flex; flex-direction: column; width: 100%;
 }
 .lb-img-grid .lb-grid-full { column-span: all; }
 
