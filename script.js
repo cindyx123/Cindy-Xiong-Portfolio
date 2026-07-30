@@ -1,3 +1,6 @@
+// Prevent browser from restoring scroll position on refresh
+history.scrollRestoration = 'manual';
+
 // Update document title + announce page change to screen readers
 const PAGE_TITLES = {
   home:     'Cindy Xiong — UX Designer',
