@@ -290,11 +290,11 @@ body::after {
 #page-home .cs-card:hover .cs-img-wrap { transform: translate(-50%,-53%); }
 #page-home .cs-img { width: 100%; display: block; box-shadow: 0 16px 56px rgba(0,0,0,.1); position: relative; z-index: 1; }
 #page-home .cs-badge {
-  position: absolute; bottom: 2rem; right: 2rem; z-index: 3;
-  background: white; border: 1px solid var(--line); padding: 0.6rem 1rem;
-  display: flex; align-items: center; gap: 0.5rem;
-  box-shadow: 0 4px 16px rgba(0,0,0,.08);
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: white; border: 1px solid var(--line); padding: 0.45rem 0.9rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06);
   font-family: var(--mono); font-size: 0.55rem; letter-spacing: 0.1em; text-transform: uppercase;
+  margin-bottom: 0.75rem;
 }
 #page-home .cs-badge-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
 #page-home .cs-badge-text { color: var(--muted); }
