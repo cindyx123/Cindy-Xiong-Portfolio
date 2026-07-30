@@ -125,6 +125,8 @@ document.addEventListener('click', e => {
   e.preventDefault();
   go(a.dataset.page, a.dataset.scroll || null);
 });
+// Cursor
+let mx=0, my=0, rx=0, ry=0;
 // Init — restore page from hash on refresh
 const initHash = window.location.hash.replace('#', '');
 if (initHash && PAGES[initHash]) {
@@ -253,7 +255,7 @@ document.addEventListener('keydown', function(e) {
   }
 });
 
-// ── SCROLL INDICATOR VISIBILITY ──────────────────────────
+// ── SCROLL INDICATOR VISIBILITY + CLICK ─────────────────
 function updateScrollIndicator() {
   const el = document.querySelector('.scroll-indicator');
   if (!el) return;
@@ -263,3 +265,16 @@ function updateScrollIndicator() {
     el.classList.remove('si-hidden');
   }
 }
+
+// Scroll indicator click — jump to case studies
+(function () {
+  const el = document.querySelector('.scroll-indicator');
+  if (!el) return;
+  el.addEventListener('click', () => scrollToEl('work'));
+  el.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      scrollToEl('work');
+    }
+  });
+})();
