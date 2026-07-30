@@ -1445,21 +1445,33 @@ br.mobile-br { display: none; }
 .lb-preview-wrap:hover img { transform: scale(1.02); }
 .lb-preview-wrap::after {
   content: ''; position: absolute;
-  bottom: 0; left: 0; right: 0; height: 100px;
-  background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.2));
+  inset: 0;
+  background: rgba(0,0,0,0);
+  transition: background 0.25s ease;
   pointer-events: none;
+  z-index: 1;
+}
+.lb-preview-wrap:hover::after {
+  background: rgba(0,0,0,0.35);
 }
 .lb-click-cue {
   position: absolute; bottom: 12px; right: 12px;
-  background: rgba(0,0,0,0.55); color: white;
+  background: rgba(255,255,255,0.93); color: #111;
   font-family: var(--mono, 'DM Mono', monospace);
-  font-size: 0.55rem; font-weight: 700;
-  padding: 5px 10px; border-radius: 20px;
-  display: flex; align-items: center; gap: 5px;
-  pointer-events: none; z-index: 2;
-  backdrop-filter: blur(4px); letter-spacing: 0.06em;
+  font-size: 0.62rem; font-weight: 700;
+  padding: 6px 12px; border-radius: 20px;
+  display: flex; align-items: center; gap: 6px;
+  pointer-events: none; z-index: 3;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.18);
+  letter-spacing: 0.05em;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
 }
-.lb-click-cue svg { width: 11px; height: 11px; fill: white; }
+.lb-preview-wrap:hover .lb-click-cue {
+  transform: scale(1.06);
+  background: #fff;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.22);
+}
+.lb-click-cue svg { width: 12px; height: 12px; fill: #111; }
 .lb-content { width: 100%; max-width: 1000px; }
 .lb-panel { display: none; }
 .lb-panel.active { display: block; }
