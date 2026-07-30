@@ -106,6 +106,7 @@ function setNav(key) {
   } else {
     label.classList.remove('show');
   }
+  updateScrollIndicator();
 }
 
 function initObs(container) {
@@ -152,6 +153,7 @@ function updateScrollUI() {
   readProg.style.background = ACCENT_COLORS[cur] || '#120e0a';
   if (scrollY > 300) backTop.classList.add('show');
   else backTop.classList.remove('show');
+  updateScrollIndicator();
 }
 window.addEventListener('scroll', updateScrollUI, { passive: true });
 
@@ -252,3 +254,14 @@ document.addEventListener('keydown', function(e) {
     });
   }
 });
+
+// ── SCROLL INDICATOR VISIBILITY ──────────────────────────
+function updateScrollIndicator() {
+  const el = document.querySelector('.scroll-indicator');
+  if (!el) return;
+  if (cur !== 'home' || window.scrollY > 80) {
+    el.classList.add('si-hidden');
+  } else {
+    el.classList.remove('si-hidden');
+  }
+}

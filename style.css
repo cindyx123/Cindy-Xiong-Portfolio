@@ -1549,3 +1549,100 @@ br.mobile-br { display: none; }
   font-size: 0.5rem; color: rgba(255,255,255,0.3);
   text-align: center; margin-top: 16px; flex-shrink: 0; letter-spacing: 0.08em;
 }
+
+/* ══════════════════════════════════════════
+   SCROLL INDICATOR
+══════════════════════════════════════════ */
+#page-home .scroll-indicator {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+#page-home .scroll-indicator.si-hidden {
+  opacity: 0;
+}
+#page-home .si-icon {
+  animation: si-bounce 2s ease-in-out infinite;
+}
+@keyframes si-bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(7px); }
+}
+
+
+/* ══════════════════════════════════════════
+   PROOF STRIP
+══════════════════════════════════════════ */
+#page-home .proof-strip {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 3rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+#page-home .proof-strip__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0 2.8rem;
+  text-align: center;
+}
+#page-home .ps-div {
+  width: 1px;
+  height: 1.75rem;
+  background: var(--line);
+  flex-shrink: 0;
+}
+#page-home .ps-val {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  line-height: 1;
+}
+#page-home .ps-lbl {
+  font-family: var(--mono);
+  font-size: 0.57rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  line-height: 1;
+}
+
+@media (max-width: 640px) {
+  #page-home .proof-strip {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  #page-home .ps-div { display: none; }
+  #page-home .proof-strip__item {
+    width: 50%;
+    padding: 1.4rem 0;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  /* Remove right border from right column (nth-child accounts for ps-div siblings: items are at 1,3,5,7) */
+  #page-home .proof-strip__item:nth-child(3),
+  #page-home .proof-strip__item:nth-child(7) {
+    border-right: none;
+  }
+  /* Remove bottom border from bottom row */
+  #page-home .proof-strip__item:nth-child(5),
+  #page-home .proof-strip__item:nth-child(7) {
+    border-bottom: none;
+  }
+}
