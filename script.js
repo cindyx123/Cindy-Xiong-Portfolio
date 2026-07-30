@@ -270,11 +270,15 @@ function updateScrollIndicator() {
 (function () {
   const el = document.querySelector('.scroll-indicator');
   if (!el) return;
-  el.addEventListener('click', () => scrollToEl('work'));
+  el.addEventListener('click', () => {
+    const target = document.getElementById('work');
+    if (target) smoothScrollTo(target.offsetTop, 750);
+  });
   el.addEventListener('keydown', e => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
-      scrollToEl('work');
+      const target = document.getElementById('work');
+      if (target) smoothScrollTo(target.offsetTop, 750);
     }
   });
 })();
