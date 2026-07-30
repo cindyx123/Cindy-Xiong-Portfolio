@@ -272,13 +272,15 @@ function updateScrollIndicator() {
   if (!el) return;
   el.addEventListener('click', () => {
     const target = document.getElementById('proof-strip');
-    if (target) smoothScrollTo(target.offsetTop, 750);
+    const navH = nav ? nav.offsetHeight : 60;
+    if (target) smoothScrollTo(target.offsetTop - navH, 750);
   });
   el.addEventListener('keydown', e => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
       const target = document.getElementById('proof-strip');
-      if (target) smoothScrollTo(target.offsetTop, 750);
+      const navH = nav ? nav.offsetHeight : 60;
+      if (target) smoothScrollTo(target.offsetTop - navH, 750);
     }
   });
 })();
