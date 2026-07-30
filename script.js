@@ -271,13 +271,13 @@ function updateScrollIndicator() {
   const el = document.querySelector('.scroll-indicator');
   if (!el) return;
   el.addEventListener('click', () => {
-    const target = document.getElementById('work');
+    const target = document.getElementById('proof-strip');
     if (target) smoothScrollTo(target.offsetTop, 750);
   });
   el.addEventListener('keydown', e => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
-      const target = document.getElementById('work');
+      const target = document.getElementById('proof-strip');
       if (target) smoothScrollTo(target.offsetTop, 750);
     }
   });
